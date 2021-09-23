@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="content-type" content="text/html" ; charset="UTF-8" />
+    <title>The Cafe</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inconsolata"
+    />
+  </head>
+  <body>
+    <!-- ================================= Nav Bar : stay on top ================================= -->
+    <div class="nav-top">
+      <div class="nav-grid padding-8-16 button-black">
+        <div class="nav-col">
+          <a href="#" class="nav-width button-form nav-block button-black"
+            >HOME</a
+          >
+        </div>
+        <div class="nav-col">
+          <a href="#about" class="nav-width button-form nav-block button-black"
+            >ABOUT</a
+          >
+        </div>
+        <div class="nav-col">
+          <a href="#menu" class="nav-width button-form nav-block button-black"
+            >MENU</a
+          >
+        </div>
+        <div class="nav-col">
+          <a href="#where" class="nav-width button-form nav-block button-black"
+            >WHERE</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ================================= END Nav Bar : stay on top ================================= -->
+
+    <!-- ================================= Header with image on BG ================================= -->
+    <header
+      class="bgimg header-image-display-container header-grayscale-min"
+      id="home"
+    >
+      <div class="header-position-bottomleft header-padding">
+        <span class="text-box">Open from 6am to 5pm</span>
+      </div>
+      <div class="header-position-middle text-center">
+        <span class="header-text-white" style="font-size: 90px"
+          >the<br />Cafe</span
+        >
+      </div>
+      <div class="header-position-bottomright header-padding">
+        <span class="header-text-white">15 Adr street, 5015</span>
+      </div>
+    </header>
+    <!-- ================================= END Header with image on BG ================================= -->
+
+    <!-- ================================= Add a background color and large text to the whole page ================================= -->
+    <cla class="bg-color container-grayscale font-large">
+      <!-- ================================= Container with all text ================================= -->
+      <div class="container" id="about">
+        <div class="container-content">
+          <div id="meteo" class="text-center"></div>
+          <div id="timer" class="timer-style"></div>
+          <h2 class="text-center padding-64">
+            <span class="text-box title-wide title-font-size" id="defuse"
+              >ABOUT THE CAFE</span
+            >
+          </h2>
+          <p>
+            The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p>
+            In addition to our full espresso and brew bar menu, we serve fresh
+            made-to-order breakfast and lunch sandwiches, as well as a selection
+            of sides and salads and other good stuff.
+          </p>
+          <div class="panel leftbar light-grey">
+            <p>
+              <em
+                >"Use products from nature for what it's worth - but never too
+                early, nor too late." Fresh is the new sweet.</em
+              >
+            </p>
+            <p>Chef, Coffeeist and Owner: Liam Brown</p>
+          </div>
+          <img
+            src="images/coffeeshop.jpg"
+            class="img-margin-top-16 img-width img-maxwidth"
+            alt=""
+          />
+          <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+          <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+        </div>
+      </div>
+      <!-- ================================= END Container with all text ================================= -->
+
+      <!-- ================================= Menu Coffee Container ================================= -->
+      <div class="container" id="menu">
+        <div class="container-content">
+          <h2 class="text-center padding-48">
+            <span class="text-box title-wide">THE MENU</span>
+          </h2>
+
+          <div
+            class="
+              text-center
+              menu-eat-drink-shadow
+              padding-8-16
+              coffeeMenu-Flex
+            "
+          >
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Eat');"
+              id="menuCoffee"
+              class="menuCoffee-text-form"
+            >
+              <div class="box-Coffee tabMenu">Eat</div>
+            </a>
+            <a
+              href="javascript:void(0)"
+              onclick="openMenu(event, 'Drinks');"
+              class="menuCoffee-text-form"
+            >
+              <div class="box-Coffee tabMenu menuCoffee-text-form">Drink</div>
+            </a>
+          </div>
+
+          <div id="Eat" class="container menu padding-48 menu-eat-drink-shadow">
+            <h2>Bread Basket</h2>
+            <p class="text-grey">
+              Assortment of fresh baked fruit breads and muffins 5.50
+            </p>
+            <br />
+
+            <h2>Honey Almond Granola with Fruits</h2>
+            <p class="text-grey">
+              Natural cereal of honey toasted oats, raisins, almonds and dates
+              7.00
+            </p>
+            <br />
+
+            <h2>Belgian Waffle</h2>
+            <p class="text-grey">
+              Vanilla flavored batter with malted flour 7.50
+            </p>
+            <br />
+
+            <h2>Scrambled eggs</h2>
+            <p class="text-grey">
+              Scrambled eggs, roasted red pepper and garlic, with green onions
+              7.50
+            </p>
+            <br />
+
+            <h2>Blueberry Pancakes</h2>
+            <p class="text-grey">With syrup, butter and lots of berries 8.50</p>
+          </div>
+
+          <div
+            id="Drinks"
+            class="container menu padding-48 menu-eat-drink-shadow"
+          >
+            <h2>Coffee</h2>
+            <p class="text-grey">Regular coffee 2.50</p>
+            <br />
+
+            <h2>Chocolato</h2>
+            <p class="text-grey">Chocolate espresso with milk 4.50</p>
+            <br />
+
+            <h2>Corretto</h2>
+            <p class="text-grey">Whiskey and coffee 5.00</p>
+            <br />
+
+            <h2>Iced tea</h2>
+            <p class="text-grey">Hot tea, except not hot 3.00</p>
+            <br />
+
+            <h2>Soda</h2>
+            <p class="text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+          </div>
+          <img
+            src="images/cafe_top_view.jpg"
+            alt=""
+            class="img-width img-maxwidth img-margin-top-32"
+          />
+        </div>
+      </div>
+      <!-- ================================= END Menu Coffee Container ================================= -->
+
+      <!-- ================================= Contact/Area Container ================================= -->
+      <div class="container padding-bottom-32" id="where">
+        <div class="container-content">
+          <h2 class="text-center padding-48">
+            <span class="text-box title-wide">WHERE TO FIND US</span>
+          </h2>
+          <p>Find us at some address at some place.</p>
+          <img src="images/map.jpg" alt="" class="img-width" />
+          <p>
+            <span class="text-box">FYI!</span> We offer full-service catering
+            for any event, large or small. We understand your needs and we will
+            cater the food to satisfy the biggerst criteria of them all, both
+            look and taste.
+          </p>
+          <p>
+            <strong>Reserve</strong> a table, ask for today's special or just
+            send us a message:
+          </p>
+          <div id="already_reserv"></div>
+          <form id="reservation" action="/action_page.php" target="_blank">
+            <p>
+              <input
+                class="form-dimension form-text-size form"
+                type="text"
+                placeholder="Name"
+                required
+                name="Name"
+                id="name"
+              />
+            </p>
+            <p>
+              <input
+                class="form-dimension form-text-size form"
+                type="number"
+                value ="1"
+                placeholder="How many people"
+                required
+                name="People"
+                id="nb_people"
+              />
+            </p>
+            <p>
+              <input
+                class="form-dimension form-text-size form"
+                type="date"
+                placeholder="Date"
+                required
+                name="date"
+                id="date"
+              />
+            </p>
+            <p>
+              <input
+                class="form-dimension form-text-size form"
+                type="time"
+                required
+                name="time"
+                id="time"
+              />
+            </p>
+            <p>
+              <input
+                class="form-dimension form-text-size form"
+                id="message"
+                type="text"
+                placeholder="Message \ Special requirements"
+                required
+                name="Message"
+              />
+            </p>
+            <p>
+              <button
+                id="reservation_cookie"
+                class="
+                  button-form button-send-padding button-black
+                  form-text-size
+                "
+                type="button"
+              >
+                SEND MESSAGE
+              </button>
+            </p>
+          </form>
+          <!-- Trigger/Open The Modal -->
+          <!-- <button id="myBtn">Open Modal</button> -->
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Veuillez accepter nos cookies.</p>
+              <button id="myBtnYes">Oui</button>
+              <button id="myBtnNo">Non</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- ================================= END Contact/Area Container ================================= -->
+      <div id="ajax" class="text-center">
+        <h2>Let AJAX change this text</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+      </div>
+      <div class="text-center">
+        <button type="button" onclick="loadCatalogue()">Catalogue d'artiste</button>
+        <table id="ajax_catalogue"></table>
+      </div>
+      <div class="text-center">
+        <!-- <p>Suggestions: <div id="txtHint"></div></p> 
+        <p>First name: <input type="text" onkeyup="showHint(this.value)"></p> -->
+        <p>Select a customer: <input type="text" onchange="showCustomer(this.value)"></p>
+        <br>
+        <div id="txtHint2">Customer info will be listed here <br /></div>
+      </div>
+      <div class = "text-center">
+          <button type="button" onclick="show_reservation()">Montrer les réservations</button>
+          <table class = "test-center-table" id="show_reservation"></table>
+      </div>
+      <div class = "text-center">
+        <button type="button" onclick="show_disponibility()">Vérifier les disponibilités</button>
+        <table id="show_disponibility"></table>
+    </div>
+    <div id="reservation_done" class="text-center"></div>
+      <!-- ================================= END background color and large text to the whole page ================================= -->
+    </div>
+
+    <!-- jsFiddle will insert css and js -->
+    <div id="map"></div>
+
+    <!-- Async script executes 
+immediately and must be after any DOM elements used in callback. -->
+
+  </body>
+</html>
+
+    <!-- ================================= Footer ================================= -->
+    <footer class="text-center light-grey-footer padding-48 font-large">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="text-green-footer"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+    <!-- ================================= End Footer ================================= -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/reservation.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/ajaxtest.js"></script>
+    <script type="text/javascript" src="js/ajax_catalogue.js"></script>
+    <script type="text/javascript" src="js/php_test.js"></script>
+    <script type="text/javascript" src="js/showcustomer.js"></script>
+    <script type="text/javascript" src="js/googlemap.js"></script>
+    <script type="text/javascript" src="js/meteo.js"></script>
+  
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk-UA07l9pellZaXdMjWOZkQmionsIZRk&callback=initMap&libraries=&v=weekly&channel=2"
+      async>
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </body>
+</html>
